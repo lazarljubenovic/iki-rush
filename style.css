@@ -1,0 +1,94 @@
+:root {
+  --silver: #DDDDDD;
+  --blue: #0074D9;
+  --green: #2ECC40;
+  --yellow: #FFDC00;
+  --orange: #FF851B;
+  --red: #FF4136;
+  --purple: #B10DC9;
+
+  --size: 2rem;
+}
+
+html {
+  font-size: calc(200%);
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  margin: 0;
+}
+
+#shape-0 { fill: var(--silver) }
+#shape-3 { fill: var(--blue) }
+#shape-5 { fill: var(--green) }
+#shape-2 { fill: var(--yellow) }
+#shape-1 { fill: var(--orange) }
+#shape-4 { fill: var(--red) }
+#shape-6 { fill: var(--purple) }
+
+[hidden] {
+  display: none !important;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#board {
+  width: fit-content;
+}
+
+table {
+  border-collapse: collapse
+}
+
+td {
+  position: relative;
+  border: solid 1px transparent;
+  padding: 0;
+  width: calc(var(--size) - 1px);
+  height: calc(var(--size) - 1px);
+}
+
+#board {
+  position: relative;
+  user-select: none;
+}
+
+#board > div {
+  position: absolute;
+  width: calc(var(--size) - 1px);
+  height: calc(var(--size) - 1px);
+  margin-left: 1px;
+  margin-bottom: 1px;
+  pointer-events: none;
+}
+
+[data-i="0"] { bottom: calc(0 * var(--size)) }
+[data-i="1"] { bottom: calc(1 * var(--size)) }
+[data-i="2"] { bottom: calc(2 * var(--size)) }
+[data-i="3"] { bottom: calc(3 * var(--size)) }
+[data-i="4"] { bottom: calc(4 * var(--size)) }
+[data-i="5"] { bottom: calc(5 * var(--size)) }
+[data-i="6"] { bottom: calc(6 * var(--size)) }
+[data-i="7"] { bottom: calc(7 * var(--size)) }
+[data-i="8"] { bottom: calc(8 * var(--size)) }
+[data-i="9"] { bottom: calc(9 * var(--size)) }
+[data-i="10"] { bottom: calc(10 * var(--size)) }
+[data-i="11"] { bottom: calc(11 * var(--size)) }
+[data-i="12"] { bottom: calc(12 * var(--size)) }
+
+[data-j="0"] { left: calc(0 * var(--size)) }
+[data-j="1"] { left: calc(1 * var(--size)) }
+[data-j="2"] { left: calc(2 * var(--size)) }
+[data-j="3"] { left: calc(3 * var(--size)) }
+[data-j="4"] { left: calc(4 * var(--size)) }
+[data-j="5"] { left: calc(5 * var(--size)) }
+[data-j="6"] { left: calc(6 * var(--size)) }
+[data-j="7"] { left: calc(7 * var(--size)) }
